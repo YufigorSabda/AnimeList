@@ -31,7 +31,7 @@ fun AboutPage(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxSize()
             .background(Color.White)
-            .padding(16.dp)
+            .padding(20.dp)
             .verticalScroll(scrollState),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -42,7 +42,7 @@ fun AboutPage(modifier: Modifier = Modifier) {
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
-            BoxImage(R.drawable.profile, "Foto Profil", size = 200.dp)
+            BoxImage(R.drawable.profile, "Foto Profil", size = 400.dp)
         }
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -54,27 +54,31 @@ fun AboutPage(modifier: Modifier = Modifier) {
         ) {
             CustomText(
                 text = "Yufigor Caesar Tegarrakasabda",
-                fontSize = 18.sp
+                fontSize = 18.sp,
+                fontWeight = FontWeight.SemiBold
             )
             CustomText(
-                text = "yufigorcaesar@gmail.com",
+                text = "yufigorsabda24@gmail.com",
                 color = Color.Gray,
-                fontWeight = FontWeight.Normal
+                fontWeight = FontWeight.SemiBold
             )
             Spacer(modifier = Modifier.height(16.dp))
             CustomText(
                 text = "Politeknik Negeri Semarang",
-                color = Color.Black
+                fontSize = 16.sp,
+                color = Color.Black,
+                fontWeight = FontWeight.SemiBold
+
             )
             CustomText(
                 text = "D3 Teknik Informatika",
                 color = Color(0xFF25043d),
-                fontWeight = FontWeight.Light
+                fontWeight = FontWeight.Normal
             )
             CustomText(
                 text = "Jurusan Teknik Elektro",
                 color = Color(0xFF25043d),
-                fontWeight = FontWeight.Light
+                fontWeight = FontWeight.Normal
             )
         }
     }
